@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://SE2/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://SE2/">
+
+<xs:element name="getDiv" type="tns:getDiv"></xs:element>
+
+<xs:element name="getDivResponse" type="tns:getDivResponse"></xs:element>
+
+<xs:element name="getMul" type="tns:getMul"></xs:element>
+
+<xs:element name="getMulResponse" type="tns:getMulResponse"></xs:element>
+
+<xs:element name="getSoma" type="tns:getSoma"></xs:element>
+
+<xs:element name="getSomaResponse" type="tns:getSomaResponse"></xs:element>
+
+<xs:element name="getSub" type="tns:getSub"></xs:element>
+
+<xs:element name="getSubResponse" type="tns:getSubResponse"></xs:element>
+
+<xs:complexType name="getSub">
+<xs:sequence>
+<xs:element name="n1" type="xs:int"></xs:element>
+<xs:element name="n2" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSoma">
+<xs:sequence>
+<xs:element name="n1" type="xs:int"></xs:element>
+<xs:element name="n2" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSomaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDiv">
+<xs:sequence>
+<xs:element name="n1" type="xs:int"></xs:element>
+<xs:element name="n2" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDivResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMul">
+<xs:sequence>
+<xs:element name="n1" type="xs:int"></xs:element>
+<xs:element name="n2" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMulResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
